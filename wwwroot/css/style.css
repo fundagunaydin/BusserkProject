@@ -1,0 +1,201 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+.bg-light {
+  background-color: #ffffff!important;
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+.carousel-inner{
+  width:100%;
+  max-height: 500px !important;
+}
+.carousel-caption{
+  top:60px;
+  bottom:auto;
+  text-align: left;
+  left:5%;
+  right:38%;
+}
+body {
+ 
+ margin: 0;
+ padding: 0;
+}
+
+.banner-area{
+  height: 100vh;
+  width: 100%;
+  background-image: url(kucuk.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.menu-area{
+  position: static;
+}
+.mega-area{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 15px;
+}
+.dropdown-item{
+  padding: 5px 0;
+}
+.menu-sub {
+  position: fixed;
+  left: 0;
+  background: #444;
+  width: 100%;
+  display: none;
+  color: #fff;
+  padding: 2em;
+}
+nav li:hover .menu-sub {
+  display: block;
+}
+.menu-sub li {
+  display: block;
+}
+
+.menu-sub a {
+  padding: 0;
+  margin-bottom: .35em;
+}
+.menu-col-1 {
+  width: 20%;
+}
+
+.p{
+  color: #999;
+  line-height: 25px;
+}
+h2,h3{
+  color: #fff;
+}
+h2{
+  font-size: 18px;
+}
+.footer-top{
+  background: #444;
+  padding: 80px 0;
+}
+.segment-one h3{
+  font-family: Courgette;
+  color: #fff;
+  letter-spacing: 3px;
+  margin: 10px 0;
+}
+.segment-two h2{
+  
+  color: #fff;
+  font-family: Poppins;
+  text-transform: uppercase;
+}
+/*---Product --*/
+
+.myDiv{
+  position: relative;
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+}
+.myDiv img{
+  width: 100%;
+  height: 100%;
+}
+ .myDiv .text{
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   background:#42da56;
+   width:100%;
+   height: 100%;
+   color:#fff;
+   -webkit-transition: all 0.3s cubic-bezier(0.4,0,1,1) 0s ;
+   -o-transition: all 0.3s cubic-bezier(0.4,0,1,1) 0s ;
+   -ms-transition: all 0.3s cubic-bezier(0.4,0,1,1) 0s ;
+   -moz-transition: all 0.3s cubic-bezier(0.4,0,1,1) 0s ;
+   transition: all 0.3s cubic-bezier(0.4,0,1,1) 0s ;;
+ }
+ .myDiv .text h4{
+   font-size: 21px;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center;
+   border-bottom: 1px solid white;
+   padding-bottom: 20px;
+   margin-top: 20px;
+ }
+ .myDiv .text p{
+  margin: 15px 0px;
+  text-align: center;
+  font-style: italic;
+  padding: 0px 10px;
+}
+.myDiv .text a.btn{
+  width:120px;
+  text-align: center;
+  display: block;
+  background: #FF8300;
+  color:#fff;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  margin: 0px auto 0px auto;
+}
+.myDiv:hover .text{
+  top:0px;
+}
+.myDiv .text a.btn:hover{
+  background: rgb(255, 255, 255);
+}
+
+div.show-image:hover img{
+  opacity:0.5;
+}
+div.show-image:hover .fa-plus-square {
+  display: block;
+}
+div.show-image:hover .fa-heart {
+  display: block;
+}
+div.show-image .fa-heart {
+  position:absolute;
+  display:none;
+}
+div.show-image .fa-plus-square {
+  position:absolute;
+  display:none;
+}
+div.show-image .fa-plus-square {
+  top:150px;
+  left:60px;
+  cursor: pointer;
+}
+div.show-image .fa-heart {
+  top:150px;
+  left:130px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
